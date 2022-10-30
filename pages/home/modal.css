@@ -1,0 +1,277 @@
+.container-modal {
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(30, 30, 30, 0.5);
+    top: 0;
+}
+
+.modal {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 32px 24px;
+    gap: 26px;
+    background-color: #FCFEFF;
+    border-radius: 8px;
+}
+
+.modal > span {
+    font-weight: 600;
+    font-size: 24px;
+    color: #212529;
+}
+
+.modal .title-article {
+    width: 100%;
+}
+
+.modal .title-article button {
+    padding: 4px 14px;
+    background-color: #E9ECEF;
+    color: #868E96;
+}
+
+.modal p {
+    font-size: 16px;
+    color: #495057;
+}
+
+.modal-post {
+    width: 800px;
+    display: none;
+}
+
+.modal-post {
+    min-width: 800px;
+    height: fit-content;
+}
+
+.modal-post .title-article {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.modal-post .title-article div {
+    width: 300px;
+    column-gap: 40px;
+}
+
+.modal-post .title-article div .border{
+    width: 50px;
+}
+
+.modal-post > span, .modal-post p {
+    width: 100%;
+}
+
+.modal-post > span {
+    background-color: red;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-post p {
+    background-color: rebeccapurple;
+}
+
+.edit {
+    display: none;
+    width: 800px;
+    height: max-content;
+    max-height: 500px;
+}
+
+.edit textarea {
+    resize: none;
+}
+
+.edit .title-post, .content-post {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit .title-article span {
+    font-weight: 600;
+    font-size: 20px;
+    color: #212529;
+}
+
+.edit .title-post span, .content-post span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #212529;
+}
+
+.edit .title-post input {
+    height: 44px;
+}
+
+.edit .content-post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit .btns {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.edit .btns button {
+    padding: 7px 10px;
+    border: none;
+    font-size: 16px;
+    color: #868E96;
+    height: 38px;
+    border-radius: 4px;
+}
+
+.edit .btns button:nth-child(2) {
+    background-color: #364FC7;
+    color: #FCFEFF;
+}
+
+.create {
+    display: none;
+    width: 800px;
+    height: fit-content;
+}
+
+.create textarea {
+    resize: none;
+}
+
+.create .title-post, .content-post {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create .title-article span {
+    font-weight: 600;
+    font-size: 20px;
+    color: #212529;
+}
+
+.create .title-post span, .content-post span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #212529;
+}
+
+.create .title-post input {
+    height: 44px;
+}
+
+.create .content-post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.create .btns {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.create .btns button {
+    padding: 7px 10px;
+    border: none;
+    font-size: 16px;
+    color: #868E96;
+    height: 38px;
+    border-radius: 4px;
+}
+
+.create .btns button:nth-child(2) {
+    background-color: #364FC7;
+    color: #FCFEFF;
+}
+
+.delete{
+    display: none;
+    height: max-content;
+}
+
+.delete .title-article span {
+    font-weight: 500;
+    font-size: 20px;
+    color: #212529;
+}
+
+.delete span {
+    width: 100%;
+    font-weight: 550;
+}
+
+.delete p {
+    width: 100%;
+}
+
+.delete .btns {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.delete .btns button {
+    padding: 7px 10px;
+    border: none;
+    font-size: 16px;
+    color: #868E96;
+    height: 38px;
+    border-radius: 4px;
+}
+
+.delete .btns button:nth-child(2) {
+    background-color: #C73650;
+    border: 1px solid #C73650;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FCFEFF;
+}
+
+.modal-alert {
+    width: 440px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    padding:21px 32px;
+    gap: 17px;
+    box-shadow: 0px 4px 30px -12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: var(--gray900);
+}
+
+.modal-alert .alert {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    color: #087F5B;
+}
+
+.modal-alert > span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #343A40;
+}
+
+.modal-alert a {
+    color: #364FC7;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petinfo - Login</title>
+    <link rel="stylesheet" href="./styles/globalStyles.css">
+    <link rel="stylesheet" href="./pages/login/index.css">
+    <link rel="stylesheet" href="./pages/login/modal.css">
+</head>
+<body>
+    <main class="container">
+        <section>
+            <h1>Petinfo</h1>
+            <span><span class="blue">Amor</span> e <span class="blue">carinho</span> por meio do conhecimento</span>
+            <span class="description">Todas as informações para melhorar a vida do seu pet em um só lugar</span>
+            <img src="./pages/assets/img-login.jpg" alt="">
+        </section>
+        <form class="form">
+            <label class="title">
+                <h2>Login</h2>
+            </label>
+            <label class="email">
+                <span>Email</span>
+                <input type="email" id="input-email" placeholder="Digite seu email aqui">
+            </label>
+            <label class="password">
+                <span>Senha</span>
+                <input type="password" id="input-password" placeholder="Digite sua senha aqui">
+                <span class="alert">A senha está incorreta</span> 
+            </label>
+            <label class="error"></label>
+            <label class="btns">
+                <button type="submit" id="btn-login" disabled>Acessar</button>
+                <button type="button" class="register-btn">Ainda não possui conta?</button>
+                <span>Clicando no botão abaixo, você pode se cadastrar rapidamente</span>
+                <button type="button" class="register" id="register">Cadastrar</button>
+            </label>
+        </form>
+    </main>
+    <script type="module" src="./pages/login/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.modal {
+    width: 440px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    padding:21px 32px;
+    gap: 17px;
+    box-shadow: 0px 4px 30px -12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: var(--gray900);
+}
+
+.modal .alert {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    color: #087F5B;
+}
+
+.modal > span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #343A40;
+}
+
+.modal a {
+    color: #364FC7;
+}

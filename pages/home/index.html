@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petinfo</title>
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/pages/home/style.css">
+    <link rel="stylesheet" href="/pages/home/modal.css">
+</head>
+<body>
+    <header class="container">
+        <h1>Petinfo</h1>
+        <div class="create-post">
+            <button id="createModalCreate">Criar publicação</button>
+            <div id="btn-logout">
+                <img id="userAvatar" src="" alt="">
+                <div>
+                    <span class="username">@</span>
+                    <button id="logout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                       <span>Sair da conta</span> 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main> 
+        <div class="feed">
+            <p class="container">Feed</p>
+        </div>
+        <nav class="container posts">
+        </nav>    
+    </main>
+    <div class="container-modal none">
+        <form class="modal create">
+        </form>   
+        
+        <form class="modal edit">            
+        </form>
+
+        <form class="modal delete">
+        </form>
+
+        <section class="modal modal-post"> 
+        </section>
+        
+    </div>
+    <div class="modal-alert">
+        <div class="alert">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Post deletado com sucesso!</span> 
+        </div>
+        <span>O post selecionado para exlusão foi deletado, a partir de agora não aparecerá no seu feed </span>
+    </div>
+    <script src="https://kit.fontawesome.com/5daa2ad7b0.js" crossorigin="anonymous"></script>
+    <script type="module" src="../../pages/home/index.js"></script>
+</body>
+</html>

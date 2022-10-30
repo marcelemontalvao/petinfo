@@ -1,0 +1,176 @@
+body{
+    background-color: #FCFEFF;
+}
+
+img {
+    width: 41px;
+    height: 41px;
+}
+
+.container {
+    max-width: 830px;
+    display: flex;
+    margin: 0 auto;
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #212529;
+}
+
+.create-post {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.create-post button {
+    width: 152px;
+    height: 38px;
+    background-color: #364FC7;
+    text-align: center;
+    border: 1px solid #364FC7;
+    border-radius: 4px;
+    color: #FCFEFF;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.feed {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F8F9FA;
+}
+
+.feed p {
+    font-weight: 500;
+    font-size: 20px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-article > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-article > div > img{   
+    border-radius: 50%;
+}
+
+.title-article .border {
+    width: 115px;
+    border-right: 3px solid  #E9ECEF;
+}
+
+.title-article  button{
+    border: none;
+    background-color:#E9ECEF;
+    padding: 0px 8px;
+    height: 32px;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    color: #212529;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.title-article  button:nth-child(2){
+    background: #F1F3F5;
+    border: 1px solid #F1F3F5;
+    color: #868E96;
+}
+
+.bold {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #212529;
+}
+
+article p {
+    font-size: 16px;
+    color: #495057;
+}
+
+article .acess {
+    background-color: transparent;
+    border: none;
+    width: 142px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #364FC7;
+}
+
+#userAvatar {
+    border-radius: 50%; 
+}
+
+#btn-logout > div{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    right: -60px;
+}
+
+#btn-logout:hover > div {
+    display: flex;
+}
+
+#btn-logout {
+    position: relative;
+}
+
+#logout {
+    background-color: #FCFEFF;
+    color: #868E96;
+    border-color: #FCFEFF;
+}
+
+#logout:hover {
+    color: #212529;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petinfo</title>
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./modal.css">
+</head>
+<body>
+    <main class="container">
+        <form class="form">
+            <label class="title">
+                <h2>Cadastro</h2>
+                <button type="button">Voltar para o login</button>
+            </label>
+            <label class="user">
+                <span>Usuário</span>
+                <input type="text" placeholder="Digite seu usuário aqui" id="username" >
+            </label>
+            <label class="email">
+                <span>Email</span>
+                <input type="email" placeholder="Digite seu email aqui" id="user-email">
+            </label>
+            <label class="user-photo">
+                <span>Link da foto do perfil</span>
+                <input type="text" placeholder="Insira o link aqui" id="user-photo">
+            </label>
+            <label class="password">
+                <span>Senha</span>
+                <input type="password" placeholder="Digite sua senha aqui" id="user-password"> 
+            </label>
+            <label class="btns">
+                <button type="submit" id="register-btn" disabled>Cadastrar</button>
+                <button type="button" id="login">Voltar para o login</button>
+            </label>
+        </form>
+        <section>
+            <h1>Petinfo</h1>
+            <span>Ooooooba!</span>
+            <span class="description">Agora vamos poder contribuir para o bem estar do seu pet por meio do conhecimento</span>
+            <img src="../assets/img-register.png" alt="">
+        </section>
+        <div class="modal">
+            <div class="alert">
+                <i class="fa-solid fa-circle-check"></i>
+                <span id="title-modal">Sua conta foi criada com sucesso!</span> 
+            </div>
+            <span id="message-modal">Agora você pode acessar os conteúdos utilizando seu usuário e senha na página de login: <a href="">Acessar página de login</a></span>
+        </div>
+    </main>   
+    <script type="module" src="./index.js"></script> 
+</body>
+</html>
